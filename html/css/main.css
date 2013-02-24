@@ -22,6 +22,19 @@ body, html, div#map {
 #marker-information {
 	top: 13px;
 	left: 55px;
+	width: 300px;
+}
+
+#marker-information a.close {
+	float: right;
+	color: white;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-decoration: none;
+}
+
+#marker-information img {
+	display: none;
 }
 
 

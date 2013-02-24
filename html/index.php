@@ -16,7 +16,9 @@
 		<div id="map" style="width: 100%; height:100%"></div>
 
 		<div class='overlay' id='marker-information'>
+			<a class='close' href='#close'>X</a>
 			<h1>Title</h1>
+			<img width='300px'/>
 		</div>
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
