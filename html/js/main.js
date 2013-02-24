@@ -23,9 +23,18 @@ $(function() {
 		});
 	});
 
+	$('#marker-information a.close').on('click', function(e) {
+		$(this).parent().hide();
+	});
+
 	function show_popup(marker) {
 		var pub = pubs[marker];
 
+		$('#marker-information img').hide();
+		//load data about pub
+		$.get("/pub_image.php?q="+pub.name, function(data) {
+			$('#marker-information img').attr('src', 'http://www.jdwetherspoon.co.uk/static/gallery/'+data+'-pub-page.jpg').show();
+		});
 
 		$('#marker-information h1').text(pub.name);
 		$('#marker-information').show();
